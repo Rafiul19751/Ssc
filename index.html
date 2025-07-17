@@ -3,535 +3,780 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে?</title>
+    <title>SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে</title>
+    <meta property="og:title" content="SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে">
+    <meta property="og:description" content="আপনার ক্যারিয়ার গড়ার স্বপ্ন পূরণ করুন ডিপ্লোমা ইঞ্জিনিয়ারিং এর মাধ্যমে। টিআইএসআই বগুড়ায় ভর্তি চলছে!">
+    <meta property="og:image" content="cover.png">
+    <meta property="og:url" content="YOUR_WEBSITE_URL"> <!-- আপনার ওয়েবসাইটের URL দিন -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে">
+    <meta name="twitter:description" content="আপনার ক্যারিয়ার গড়ার স্বপ্ন পূরণ করুন ডিপ্লোমা ইঞ্জিনিয়ারিং এর মাধ্যমে। টিআইএসআই বগুড়ায় ভর্তি চলছে!">
+    <meta name="twitter:image" content="cover.png">
+
     <style>
         /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            color: #333;
             background-color: #f4f4f4;
-            scroll-behavior: smooth; /* For smooth scrolling to tech details */
+            color: #333;
         }
-
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
-
-        /* Header */
-        header {
-            background: #ffffff; /* White background for header */
-            padding-top: 10px;
+        h1, h2, h3 {
+            color: #0056b3;
             text-align: center;
-            border-bottom: #e0e0e0 1px solid;
-        }
-
-        .cover-image {
-            width: 100%;
-            max-width: 600px; /* Adjust as needed for thumbnail-like appearance */
-            height: auto;
-            display: block; /* Remove extra space below image */
-            margin: 0 auto; /* Center the image */
-            border-radius: 8px; /* Optional: rounded corners */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
-        }
-
-        /* Hero Section */
-        .hero-section {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Blue gradient */
-            color: #fff;
-            position: relative;
-            overflow: hidden; /* To contain the gradient wave */
-        }
-
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 80px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,165.3C672,192,768,224,864,208C960,192,1056,128,1152,112C1248,96,1344,139,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>'); /* Wave effect */
-            background-repeat: repeat-x;
-            background-size: 100% 80px; /* Adjust height of wave */
-        }
-
-        .hero-section h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
-        }
-
-        .hero-section h2 {
-            font-size: 1.6em;
             margin-bottom: 20px;
-            font-weight: normal;
         }
-
-        /* Article Content */
-        .article-content {
-            padding: 30px 20px;
-            background-color: #fff;
-            margin: 20px auto;
-            max-width: 800px; /* Limit content width */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        h2 {
+            font-size: 1.8em;
         }
-
-        .article-content h3 {
-            color: #007bff; /* Blue for section titles */
+        h3 {
+            font-size: 1.4em;
             margin-top: 25px;
+        }
+        p {
             margin-bottom: 15px;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 5px;
         }
-
-        .article-content ul {
-            list-style: disc;
-            padding-left: 20px;
+        ul {
+            list-style: none;
+            padding: 0;
         }
-
-        .article-content ul li {
-            margin-bottom: 10px;
-        }
-
-        .article-content a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .article-content a:hover {
-            text-decoration: underline;
-        }
-
-        /* Technology Details */
-        .tech-detail {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #eef7ff; /* Light blue background for tech details */
-            border-left: 4px solid #007bff; /* Blue border */
+        .icon-list li {
+            background: #e2e2e2;
+            padding: 10px;
+            margin-bottom: 5px;
             border-radius: 5px;
-            display: none; /* Hidden by default */
+            display: flex;
+            align-items: center;
+        }
+        .icon-list li::before {
+            content: '✅';
+            margin-right: 10px;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .star-list li::before {
+            content: '⭐';
+            margin-right: 10px;
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .sparkle-list li::before {
+            content: '✨';
+            margin-right: 10px;
+            color: #fff;
+            font-weight: bold;
         }
 
-        .tech-detail h4 {
-            margin-top: 0;
-            color: #0056b3; /* Darker blue */
-        }
-
-        /* Footer and Buttons */
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #ffffff;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        /* Header Section with Cover Image */
+        .header {
+            background: url('cover.png') no-repeat center center/cover;
+            color: #fff;
+            min-height: 450px; /* Adjusted height to fit 1280x841 aspect ratio more naturally */
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            text-align: center;
+            position: relative;
+            border-bottom: #007bff 2px solid;
+        }
+        .header::before { /* Overlay for better text readability */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .header-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .header-content p {
+            font-size: 1.2em;
+            margin-top: 20px;
         }
 
-        /* Share Button */
-        .share-button {
-            margin: 0 15px 15px 0; /* Add margin below share button */
+        /* Technologies Section */
+        .tech-section {
+            background: #fff;
+            padding: 40px 0;
+            border-bottom: #ccc 1px solid;
+        }
+        .tech-section h2 {
+            margin-bottom: 30px;
+            color: #0056b3;
+        }
+        .tech-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider for better readability */
+            gap: 20px;
+        }
+        .tech-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tech-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .tech-item h3 {
+            color: #0056b3;
+            margin-top: 0;
+            font-size: 1.3em; /* Adjusted font size */
+        }
+        .tech-item a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .tech-item a:hover {
+            color: #004085;
+            text-decoration: underline;
         }
 
-        #shareButton {
-            background-color: #28a745; /* Green */
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
+        /* Detailed Tech Articles */
+        .detailed-article {
+            display: none; /* Hidden by default */
+            background: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .detailed-article h3 {
+            text-align: left;
+            color: #007bff;
+        }
+        .detailed-article p {
+            text-align: justify;
+        }
+        .close-article-btn {
+            display: block;
+            text-align: right;
+            color: #dc3545;
             cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
+            font-weight: bold;
+            margin-top: 15px;
         }
 
-        #shareButton:hover {
-            background-color: #218838;
+        /* Why Diploma Section */
+        .why-diploma {
+            background: #e9ecef;
+            padding: 40px 0;
+        }
+        .why-diploma h2 {
+            color: #0056b3;
+        }
+        .why-diploma-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .why-diploma-item {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .why-diploma-item h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        /* TISI Bogura Section */
+        .tisi-bogura {
+            background: #fff;
+            padding: 40px 0;
+        }
+        .tisi-bogura h2 {
+            color: #0056b3;
+        }
+        .tisi-bogura-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .tisi-bogura-item {
+            flex: 1;
+            min-width: 300px;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .tisi-bogura-item h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        /* Admission Info Section */
+        .admission-info {
+            background: #007bff;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .admission-info h2 {
+            color: #fff;
+            font-size: 1.8em;
+        }
+        .admission-info p {
+            margin-bottom: 20px;
         }
 
         /* Floating Admission Button */
         .floating-button {
-            position: fixed; /* Fixed position */
-            bottom: 80px; /* Position it above the footer */
-            right: 20px; /* Position on the right */
-            z-index: 1000; /* Ensure it's on top */
-        }
-
-        #admissionBtn {
-            background-color: #ffc107; /* Yellow */
-            color: #212529; /* Dark text */
-            padding: 15px 30px;
-            border: none;
-            border-radius: 50px; /* Circular button */
-            font-size: 1.3em;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Strong shadow */
-            animation: pulse 2s infinite; /* Pulse animation */
-            transition: all 0.3s ease;
-        }
-
-        #admissionBtn:hover {
-            background-color: #e0a800;
-            transform: translateY(-3px); /* Slight lift on hover */
-            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            }
-            50% {
-                transform: scale(1.05);
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            }
-        }
-
-        /* Popup Styles */
-        .popup {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1001; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-            backdrop-filter: blur(5px); /* Blur effect */
-        }
-
-        .popup-content {
-            background-color: #fefefe;
-            margin: 10% auto; /* 10% from the top and centered */
-            padding: 30px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-            max-width: 500px; /* Max width */
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            position: relative;
-            text-align: center;
-        }
-
-        .popup-content h3 {
-            margin-top: 0;
-            color: #007bff;
-            font-size: 1.8em;
-            margin-bottom: 25px;
-        }
-
-        .close-button {
-            color: #aaa;
-            position: absolute;
-            top: 10px;
+            position: fixed;
+            bottom: 20px;
             right: 20px;
-            font-size: 30px;
-            font-weight: bold;
+            z-index: 1000;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        .floating-button button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 18px;
             cursor: pointer;
-        }
-
-        .close-button:hover,
-        .close-button:focus {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .contact-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 15px; /* Space between buttons */
-        }
-
-        .contact-btn {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #333;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .floating-button button:hover {
+            transform: scale(1.1);
         }
 
-        .contact-btn img {
+        /* Popup Styles */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            position: relative;
+            max-width: 90%;
+        }
+        .popup-content h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .popup-content .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .popup-content .contact-buttons button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-content .contact-buttons button:hover {
+            background: #004085;
+        }
+        .popup-content .contact-buttons button img {
             width: 24px;
             height: 24px;
             margin-right: 10px;
+            vertical-align: middle;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+        }
+        .close-button:hover {
+            color: #777;
         }
 
-        .contact-btn.facebook {
-            background-color: #1877f2;
+        /* Share Button */
+        .share-section {
+            background: #f8f9fa;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .share-section h3 {
+            color: #0056b3;
+            font-size: 1.6em;
+        }
+        .share-button {
+            background-color: #17a2b8;
             color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: inline-flex; /* Use inline-flex for centering icon */
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
         }
-        .contact-btn.facebook:hover {
-            background-color: #166fe5;
-            transform: translateY(-2px);
+        .share-button:hover {
+            background: #138496;
         }
-
-        .contact-btn.whatsapp {
-            background-color: #25d366;
-            color: white;
-        }
-        .contact-btn.whatsapp:hover {
-            background-color: #1db954;
-            transform: translateY(-2px);
-        }
-
-        .contact-btn.call {
-            background-color: #00cc00; /* Bright green for call */
-            color: white;
-        }
-        .contact-btn.call:hover {
-            background-color: #00b300;
-            transform: translateY(-2px);
+        .share-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            filter: invert(1); /* Makes the icon white */
         }
 
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 1.8em;
+        /* Footer */
+        footer {
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             }
-            .hero-section h2 {
-                font-size: 1.3em;
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .header-content h1 {
+                font-size: 2em;
+            }
+            .header {
+                min-height: 300px;
+            }
+            .tech-list {
+                grid-template-columns: 1fr;
+            }
+            .why-diploma-content, .tisi-bogura-content {
+                flex-direction: column;
             }
             .floating-button {
-                bottom: 70px; /* Adjust for smaller screens */
+                bottom: 10px;
                 right: 10px;
             }
-            #admissionBtn {
-                font-size: 1.1em;
+            .floating-button button {
                 padding: 12px 20px;
-            }
-            footer {
-                flex-direction: column; /* Stack footer items */
-                padding-bottom: 70px; /* Add padding to prevent content overlap */
-            }
-            .share-button {
-                margin-bottom: 10px; /* Space between stacked footer items */
+                font-size: 16px;
             }
             .popup-content {
-                margin: 20% auto;
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-section h1 {
-                font-size: 1.6em;
-            }
-            .hero-section h2 {
-                font-size: 1.1em;
-            }
-            #admissionBtn {
-                font-size: 1em;
-                padding: 10px 18px;
-            }
-            .floating-button {
-                bottom: 60px;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- Ensure cover.png is in the same directory as the HTML file -->
-        <img src="cover.png" alt="College Cover" class="cover-image">
+    <header class="header">
+        <div class="header-content">
+           
+        </div>
     </header>
 
-    <main>
-        <section class="hero-section">
-            <h1>SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে?</h1>
-            <h2>ডিপ্লোমা ইঞ্জিনিয়ার এর অধিকার?</h2>
-        </section>
+    <section class="tech-section">
+        <div class="container">
+            <h2>আমাদের টেকনোলজিসমূহ</h2>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <h3>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং</h3>
+                    <p>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং বিভাগ তথ্যপ্রযুক্তি শিল্পের মেরুদণ্ড। এই বিভাগে আপনি হার্ডওয়্যার, সফটওয়্যার, নেটওয়ার্কিং, ডেটাবেস ম্যানেজমেন্ট, আর্টিফিশিয়াল ইন্টেলিজেন্স এবং সাইবার সিকিউরিটি সম্পর্কে শিখবেন। একজন গ্র্যাজুয়েট সফটওয়্যার ডেভেলপার, নেটওয়ার্ক ইঞ্জিনিয়ার, ডেটা সায়েন্টিস্ট, বা সাইবার সিকিউরিটি বিশেষজ্ঞ হিসেবে ক্যারিয়ার গড়তে পারেন।</p>
+                    <a href="#" onclick="showArticle('cse'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং</h3>
+                    <p>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং সৃজনশীলতা এবং প্রযুক্তির এক চমৎকার মেলবন্ধন। এই কোর্সটি আপনাকে লোগো ডিজাইন, ব্র্যান্ডিং, ওয়েব ডিজাইন, ইউজার ইন্টারফেস (UI) এবং ইউজার এক্সপেরিয়েন্স (UX) ডিজাইন, অ্যানিমেশন এবং মাল্টিমিডিয়া প্রোডাকশনের মতো বিষয়গুলিতে দক্ষ করে তুলবে। গ্রাফিক্স ডিজাইনারদের চাহিদা ডিজিটাল জগতে অপরিসীম।</p>
+                    <a href="#" onclick="showArticle('graphics'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>সিরামিক ইঞ্জিনিয়ারিং</h3>
+                    <p>সিরামিক ইঞ্জিনিয়ারিং মূলত কাঁচ, ইট, টাইলস, এবং অন্যান্য সিরামিক সামগ্রীর উৎপাদন এবং প্রযুক্তি নিয়ে কাজ করে। এখানে আপনি কাঁচামালের ধর্ম, উৎপাদন প্রক্রিয়া, টেস্টিং এবং মান নিয়ন্ত্রণ সম্পর্কে জ্ঞান লাভ করবেন। সিরামিক শিল্প দেশের নির্মাণ ও উৎপাদন খাতে গুরুত্বপূর্ণ ভূমিকা রাখে।</p>
+                    <a href="#" onclick="showArticle('ceramic'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>গ্লাস ইঞ্জিনিয়ারিং</h3>
+                    <p>গ্লাস ইঞ্জিনিয়ারিং হলো কাঁচ উৎপাদন, প্রক্রিয়াকরণ, এবং এর বিভিন্ন ব্যবহারিক দিক নিয়ে আলোচনা। এই কোর্স আপনাকে কাঁচ তৈরির রাসায়নিক প্রক্রিয়া, নতুন ধরনের কাঁচ তৈরি এবং কাঁচের উন্নত ব্যবহার সম্পর্কে জ্ঞান দেবে। নির্মাণ শিল্প, স্বয়ংচালিত শিল্প এবং ইলেকট্রনিক্স সহ বিভিন্ন ক্ষেত্রে গ্লাস ইঞ্জিনিয়ারিং-এর ব্যাপক চাহিদা রয়েছে।</p>
+                    <a href="#" onclick="showArticle('glass'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>সিভিল ইঞ্জিনিয়ারিং</h3>
+                    <p>সিভিল ইঞ্জিনিয়ারিং অবকাঠামো নির্মাণ এবং রক্ষণাবেক্ষণের সাথে জড়িত। এই বিভাগে আপনি ভবন, রাস্তা, সেতু, বাঁধ এবং অন্যান্য পাবলিক ওয়ার্কস ডিজাইন, নির্মাণ এবং রক্ষণাবেক্ষণ সম্পর্কে শিখবেন। দেশের উন্নয়নে সিভিল ইঞ্জিনিয়ারদের ভূমিকা অপরিহার্য।</p>
+                    <a href="#" onclick="showArticle('civil'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং</h3>
+                    <p>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং বিদ্যুৎ উৎপাদন, সঞ্চালন, বিতরণ এবং বিদ্যুৎ চালিত যন্ত্রপাতির ডিজাইন ও রক্ষণাবেক্ষণ নিয়ে কাজ করে। আপনি এই বিভাগে বৈদ্যুতিক সার্কিট, পাওয়ার সিস্টেম, কন্ট্রোল সিস্টেম এবং ইলেকট্রনিক্স সম্পর্কে শিখবেন। বিদ্যুৎ খাত দেশের অর্থনীতির চালিকাশক্তি এবং ইলেকট্রিক্যাল ইঞ্জিনিয়ারদের চাহিদা সবসময়ই বেশি।</p>
+                    <a href="#" onclick="showArticle('electrical'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>মেকানিক্যাল ইঞ্জিনিয়ারিং</h3>
+                    <p>মেকানিক্যাল ইঞ্জিনিয়ারিং হলো মেশিন, শক্তি এবং পদার্থের অধ্যয়ন। এই বিভাগে আপনি ইঞ্জিন, যানবাহন, উৎপাদন পদ্ধতি, রোবোটিক্স এবং থার্মোডাইনামিক্স সম্পর্কে শিখবেন। শিল্পোৎপাদন, অটোমোবাইল, এবং এনার্জি সেক্টরে মেকানিক্যাল ইঞ্জিনিয়ারদের ব্যাপক চাহিদা রয়েছে।</p>
+                    <a href="#" onclick="showArticle('mechanical'); return false;">বিস্তারিত জানুন</a>
+                </div>
+                <div class="tech-item">
+                    <h3>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং</h3>
+                    <p>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং হলো ইলেকট্রনিক সার্কিট, কম্পোনেন্ট এবং সিস্টেমের ডিজাইন, ডেভেলপমেন্ট এবং টেস্টিং। এই বিভাগ আপনাকে মাইক্রোপ্রসেসর, সেমিকন্ডাক্টর, কমিউনিকেশন সিস্টেম এবং এমবেডেড সিস্টেম সম্পর্কে জ্ঞান দেবে। আজকের ডিজিটাল বিশ্বে ইলেকট্রনিক্স ইঞ্জিনিয়ারদের ভূমিকা অত্যন্ত গুরুত্বপূর্ণ।</p>
+                    <a href="#" onclick="showArticle('electronics'); return false;">বিস্তারিত জানুন</a>
+                </div>
+            </div>
 
-        <section class="article-content">
-            <p>
-                ➡একবিংশ শতাব্দির চ্যালেঞ্জ মোকাবিলার জন্য কারিগরি শিক্ষার কোন বিকল্প নেই। আর কারিগরি শিক্ষার অন্যতম দিক হচ্ছে হাতে কলমে শিক্ষা গ্রহণ যাতে করে শিক্ষার্থীরা টেকসই ক্যারিয়ার নিশ্চিত করতে পারে। শুধুমাত্র ৪ বছরের ডিপ্লোমা কোর্সের পরেই সরকারি চাকরির পাশাপাশি বিভিন্ন বেসরকারি প্রতিষ্ঠানে চাকরির সুযোগ রয়েছে এছাড়াও উপ-সহকারি প্রকৌশলী পদে, সরকারি প্রতিষ্ঠান সহ দেশ বিদেশের বিভিন্ন প্রতিষ্ঠান গুলোতেও ডিপ্লোমা ইঞ্জিনিয়ারদের ব্যাপক চাহিদা রয়েছে। তাই একজন সচেতন নাগরিক হিসেবে খুব অল্প সময়ে ক্যারিয়ার গড়ার জন্য কারিগরি শিক্ষার কোন বিকল্প নেই। সেই লক্ষ্যকে সামনে রেখে বগুড়াতে,, টিএমএসএস ইন্সটিটিউট অব সাইন্স এ্যান্ড আইসিটি,, দিচ্ছে আধুনিক শিক্ষা ব্যবস্থা।
-            </p>
-            <p>
-                একজন ডিপ্লোমা ইন্জিনিয়ার ও জেনারেল পড়ুয়া ব্যক্তির মধ্যে রাত দিন তফাত কেননা, একজন ডিপ্লোমা ইন্জিনিয়ার এর গ্রেড পয়েন্ট ১০ যা একজন ওসির সমান যা আপনি জেনারেল এ অর্জন করতে গেলে অনেক সময় সাপেক্ষ ব্যাপার ও যদি আপনি জেনারেল এ না হয় কষ্ট করে গেলেন কিন্তু আপনার তো টেকনিক্যাল স্কিল নেই যার কারণে আপনাকে বেকারত্বে ভুগতে হবে কেননা জেনারেল এ প্রতিযোগী বেশি চাকরির ক্ষেত্রে। অতএব ৪ বছরে একটু কষ্ট করুন আশা রাখতে পারেন বিফলে যাবে না ইনশাআল্লাহ।
-            </p>
-            <p>
-                ➡টিআইএসআই দেশের সেরা বেসরকারি পলিটেকনিক ইন্সটিটিউট সমূহের মধ্যে অন্যতম এবং প্রতি বছর একের অধিক শিক্ষার্থী বোর্ড ফাইনাল পরীক্ষার ফলাফলে মেধা তালিকায় থাকে। চাকরির ক্ষেত্রে সব চেয়ে বড় ভূমিকা পালন করে যেহেতু TMSS তো নিজেই অনেক বড় একটি প্রতিষ্ঠান তাই TMSS নিজেই যদি তার প্রতিষ্ঠানে চাকরি দেয় তাহলে আপনার কি কোন সমস্যা আছে? 😀
-            </p>
-            <p>
-                🔵প্রযুক্তি নির্ভর শিক্ষা একটি দেশকে এগিয়ে নিয়ে যেতে অনন্য ভূমিকা পালন করে। কর্মমূখী শিক্ষা হোক ক্যারিয়ার গড়ার এবং বেকারত্ব দূরীকরণের প্রধান মাধ্যম।
-            </p>
-            <p>
-                🎆টিআইএসআই বগুড়া এ ৪ বছর মেয়াদি ডিপ্লোমা ইঞ্জিনিয়ারিং এ ২০২৪-২৫ সেশনে ভর্তি চলছে।
-            </p>
+            <!-- Detailed Articles -->
+            <div id="cse-article" class="detailed-article">
+                <h3>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং</h3>
+                <p>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং একটি দ্রুত বর্ধনশীল ক্ষেত্র যা আধুনিক বিশ্বের প্রায় প্রতিটি দিককে প্রভাবিত করে। এই কোর্সে আপনি প্রোগ্রামিং ল্যাঙ্গুয়েজ (যেমন C++, Java, Python), ডেটা স্ট্রাকচার, অ্যালগরিদম, অপারেটিং সিস্টেম, ডেটাবেস ম্যানেজমেন্ট, কম্পিউটার নেটওয়ার্কিং, সফটওয়্যার ইঞ্জিনিয়ারিং এবং আর্টিফিশিয়াল ইন্টেলিজেন্সের মতো বিষয়গুলো নিয়ে গভীর জ্ঞান অর্জন করবেন।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>সফটওয়্যার ইঞ্জিনিয়ার/ডেভেলপার</li>
+                    <li>ওয়েব ডেভেলপার</li>
+                    <li>মোবাইল অ্যাপ ডেভেলপার</li>
+                    <li>নেটওয়ার্ক অ্যাডমিনিস্ট্রেটর</li>
+                    <li>ডেটা সায়েন্টিস্ট</li>
+                    <li>সাইবার সিকিউরিটি অ্যানালিস্ট</li>
+                    <li>AI/ML ইঞ্জিনিয়ার</li>
+                    <li>ডাটাবেস অ্যাডমিনিস্ট্রেটর</li>
+                </ul>
+                <p>এই বিভাগে পড়াশোনা করলে আপনি কেবল দেশেই নয়, আন্তর্জাতিক বাজারেও উচ্চ চাহিদাসম্পন্ন ক্যারিয়ার গড়তে পারবেন। প্রযুক্তি যেমন এগিয়ে চলেছে, তেমনি এই ক্ষেত্রের পেশাদারদের চাহিদাও উত্তরোত্তর বৃদ্ধি পাচ্ছে।</p>
+                <span class="close-article-btn" onclick="hideArticle('cse')">বন্ধ করুন</span>
+            </div>
+
+            <div id="graphics-article" class="detailed-article">
+                <h3>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং</h3>
+                <p>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং আপনাকে ভিজ্যুয়াল কমিউনিকেশনের জগতে এক নতুন দিগন্ত উন্মোচন করবে। এই কোর্সে আপনি Adobe Photoshop, Illustrator, InDesign, After Effects, UI/UX ডিজাইন টুলস (যেমন Figma, Adobe XD) সহ বিভিন্ন আধুনিক ডিজাইন সফটওয়্যার ব্যবহার শিখবেন। ব্র্যান্ড আইডেন্টিটি তৈরি, ডিজিটাল বিজ্ঞাপন ডিজাইন, ইউজার ইন্টারফেস ডিজাইন এবং মোশন গ্রাফিক্স তৈরিতে আপনি পারদর্শী হয়ে উঠবেন।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>গ্রাফিক্স ডিজাইনার</li>
+                    <li>ওয়েব ডিজাইনার</li>
+                    <li>UI/UX ডিজাইনার</li>
+                    <li>ব্র্যান্ডিং স্পেশালিস্ট</li>
+                    <li>মোশন গ্রাফিক্স আর্টিস্ট</li>
+                    <li>ভিজ্যুয়াল ইফেক্টস আর্টিস্ট</li>
+                    <li>ফ্রিল্যান্স ডিজাইনার</li>
+                </ul>
+                <p>একটি শক্তিশালী ভিজ্যুয়াল উপস্থিতি যেকোনো ব্যবসা বা প্রতিষ্ঠানের জন্য অপরিহার্য। তাই একজন দক্ষ গ্রাফিক্স ডিজাইনারের চাহিদা সবসময়ই থাকে এবং এই পেশায় সৃজনশীলতার পাশাপাশি ভালো আয়ের সুযোগও রয়েছে।</p>
+                <span class="close-article-btn" onclick="hideArticle('graphics')">বন্ধ করুন</span>
+            </div>
+
+            <div id="ceramic-article" class="detailed-article">
+                <h3>সিরামিক ইঞ্জিনিয়ারিং</h3>
+                <p>সিরামিক ইঞ্জিনিয়ারিং আধুনিক শিল্প এবং প্রযুক্তির একটি গুরুত্বপূর্ণ শাখা। এই কোর্সে আপনি সিরামিক উপাদানের বৈশিষ্ট্য, যেমন - তাপ সহনশীলতা, রাসায়নিক প্রতিরোধ ক্ষমতা, বৈদ্যুতিক নিরোধক ক্ষমতা ইত্যাদি সম্পর্কে বিস্তারিত জানবেন। পাশাপাশি টাইলস, স্যানিটারি ওয়্যার, রিফ্র্যাক্টরিজ, গ্লাস-সিরামিক এবং অ্যাডভান্সড সিরামিকের মতো পণ্য উৎপাদন প্রক্রিয়া, মান নিয়ন্ত্রণ এবং নতুন উপাদান তৈরির কৌশল শিখবেন।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>সিরামিক প্রোডাক্ট ডিজাইনার</li>
+                    <li>প্রোডাকশন ইঞ্জিনিয়ার (সিরামিক)</li>
+                    <li>কোয়ালিটি কন্ট্রোল ইঞ্জিনিয়ার</li>
+                    <li>মেটেরিয়ালস ইঞ্জিনিয়ার (সিরামিক স্পেশালাইজেশন)</li>
+                    <li>রিসার্চ অ্যান্ড ডেভেলপমেন্ট ইঞ্জিনিয়ার</li>
+                    <li>সেলস অ্যান্ড মার্কেটিং এক্সিকিউটিভ (সিরামিক ইন্ডাস্ট্রি)</li>
+                </ul>
+                <p>নির্মাণ শিল্প থেকে শুরু করে মহাকাশ গবেষণা পর্যন্ত, সিরামিক ইঞ্জিনিয়ারিং-এর প্রয়োগ বিস্তৃত। এই ক্ষেত্রে পেশাদারদের চাহিদা ক্রমশ বাড়ছে কারণ উন্নত মানের সিরামিক সামগ্রী আধুনিক প্রযুক্তির জন্য অপরিহার্য।</p>
+                <span class="close-article-btn" onclick="hideArticle('ceramic')">বন্ধ করুন</span>
+            </div>
+
+            <div id="glass-article" class="detailed-article">
+                <h3>গ্লাস ইঞ্জিনিয়ারিং</h3>
+                <p>গ্লাস ইঞ্জিনিয়ারিং আপনাকে কাঁচের বৈজ্ঞানিক ও প্রযুক্তিগত দিকগুলো সম্পর্কে ওয়াকিবহাল করবে। এই কোর্সের মাধ্যমে আপনি বিভিন্ন প্রকার কাঁচের (যেমন - সোডা-লাইম গ্লাস, বোরোসিলিকেট গ্লাস, ফাইবারগ্লাস) উৎপাদন পদ্ধতি, কাঁচের ভৌত ও রাসায়নিক বৈশিষ্ট্য, টেস্টিং এবং নতুন নতুন ক্ষেত্রে এর ব্যবহারিক প্রয়োগ সম্পর্কে শিখবেন। অটোমোবাইল, স্থাপত্য, ইলেকট্রনিক্স এবং অপটিক্যাল সরঞ্জামে গ্লাসের ব্যবহার অত্যন্ত গুরুত্বপূর্ণ।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>গ্লাস প্রোডাকশন ইঞ্জিনিয়ার</li>
+                    <li>গ্লাস টেস্টিং ইঞ্জিনিয়ার</li>
+                    <li>গ্লাস কোয়ালিটি কন্ট্রোল সুপারভাইজার</li>
+                    <li>রিসার্চ অ্যাসোসিয়েট (গ্লাস টেকনোলজি)</li>
+                    <li>গ্লাস ফ্যাব্রিকেশন স্পেশালিস্ট</li>
+                    <li>সেলস ইঞ্জিনিয়ার (গ্লাস প্রোডাক্টস)</li>
+                </ul>
+                <p>কাঁচ একটি versatile material এবং এর চাহিদা সবসময়ই রয়েছে। আধুনিক যুগে উচ্চ-কার্যকারিতা সম্পন্ন কাঁচের গুরুত্ব বৃদ্ধি পাওয়ায় এই ক্ষেত্রের পেশাদারদের জন্য সুবর্ণ সুযোগ তৈরি হয়েছে।</p>
+                <span class="close-article-btn" onclick="hideArticle('glass')">বন্ধ করুন</span>
+            </div>
+
+            <div id="civil-article" class="detailed-article">
+                <h3>সিভিল ইঞ্জিনিয়ারিং</h3>
+                <p>সিভিল ইঞ্জিনিয়ারিং হলো প্রকৌশল বিদ্যার অন্যতম প্রাচীন ও বিস্তৃত শাখা যা আমাদের চারপাশের অবকাঠামো নির্মাণ ও রক্ষণাবেক্ষণের সাথে জড়িত। এই কোর্সে আপনি ডিজাইন ও কনস্ট্রাকশন মেথডোলজি, স্ট্রাকচারাল অ্যানালাইসিস, জিওটেকনিক্যাল ইঞ্জিনিয়ারিং, ট্রান্সপোর্টেশন ইঞ্জিনিয়ারিং, ওয়াটার রিসোর্স ইঞ্জিনিয়ারিং এবং এনভায়রনমেন্টাল ইঞ্জিনিয়ারিং এর মতো গুরুত্বপূর্ণ বিষয়গুলো সম্পর্কে বিস্তারিত জ্ঞান লাভ করবেন। আপনি বাড়ি, রাস্তা, সেতু, সুড়ঙ্গ, বিমানবন্দর এবং বাঁধের মতো বিশাল প্রকল্পগুলিতে কাজ করার সুযোগ পাবেন।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>সিভিল ইঞ্জিনিয়ার</li>
+                    <li>স্ট্রাকচারাল ইঞ্জিনিয়ার</li>
+                    <li>সাইট ইঞ্জিনিয়ার</li>
+                    <li>প্রজেক্ট ম্যানেজার</li>
+                    <li>হাইড্রোলিক ইঞ্জিনিয়ার</li>
+                    <li>ট্রান্সপোর্টেশন প্ল্যানার</li>
+                    <li>কনস্ট্রাকশন ম্যানেজার</li>
+                    <li>জিওটেকনিক্যাল ইঞ্জিনিয়ার</li>
+                </ul>
+                <p>দেশের উন্নয়ন ও আধুনিকীকরণে সিভিল ইঞ্জিনিয়ারদের ভূমিকা অনস্বীকার্য। এই পেশায় রয়েছে কাজের ব্যাপক সুযোগ এবং এটি একটি সম্মানজনক ও স্থিতিশীল ক্যারিয়ার গড়ার অন্যতম সেরা পথ।</p>
+                <span class="close-article-btn" onclick="hideArticle('civil')">বন্ধ করুন</span>
+            </div>
+
+            <div id="electrical-article" class="detailed-article">
+                <h3>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং</h3>
+                <p>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং বিদ্যুৎ উৎপাদন, সঞ্চালন, বিতরণ এবং এর ব্যবহারের সাথে সম্পর্কিত একটি মৌলিক প্রকৌশল ক্ষেত্র। এই কোর্সে আপনি পাওয়ার সিস্টেম, ইলেকট্রনিক সার্কিট, কন্ট্রোল সিস্টেম, টেলিকমিউনিকেশন, ইলেকট্রিক মেশিন এবং পাওয়ার ইলেকট্রনিক্স নিয়ে কাজ করা শিখবেন। আধুনিক প্রযুক্তির প্রায় প্রতিটি ক্ষেত্রে বিদ্যুতের ব্যবহার অপরিহার্য, তাই এই বিষয়ের চাহিদা সবসময়ই সর্বোচ্চ।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>ইলেকট্রিক্যাল ইঞ্জিনিয়ার</li>
+                    <li>পাওয়ার সিস্টেম ইঞ্জিনিয়ার</li>
+                    <li>ইলেকট্রনিক্স ডিজাইন ইঞ্জিনিয়ার</li>
+                    <li>কন্ট্রোল সিস্টেম ইঞ্জিনিয়ার</li>
+                    <li>টেলিকমিউনিকেশন ইঞ্জিনিয়ার</li>
+                    <li>ইলেকট্রিক ভেহিকেল ইঞ্জিনিয়ার</li>
+                    <li>সাবস্টেশন ইঞ্জিনিয়ার</li>
+                    <li>রেলওয়ে ইলেকট্রিক্যাল ইঞ্জিনিয়ার</li>
+                </ul>
+                <p>ইলেকট্রিক্যাল ইঞ্জিনিয়াররা পাওয়ার প্ল্যান্ট, ট্রান্সমিশন লাইন, ইন্ডাস্ট্রিয়াল অটোমেশন, কনজিউমার ইলেকট্রনিক্স, এবং রিনিউয়েবল এনার্জি সেক্টরে গুরুত্বপূর্ণ ভূমিকা পালন করেন। এটি একটি বিশ্বব্যাপী চাহিদা সম্পন্ন এবং অত্যন্ত লাভজনক পেশা।</p>
+                <span class="close-article-btn" onclick="hideArticle('electrical')">বন্ধ করুন</span>
+            </div>
+
+            <div id="mechanical-article" class="detailed-article">
+                <h3>মেকানিক্যাল ইঞ্জিনিয়ারিং</h3>
+                <p>মেকানিক্যাল ইঞ্জিনিয়ারিং হলো প্রকৌশলের সেই শাখা যা যন্ত্র, শক্তি, এবং পদার্থবিদ্যা সম্পর্কিত। এই কোর্সে আপনি থার্মোডাইনামিক্স, ফ্লুইড মেকানিক্স, মেশিন ডিজাইন, ম্যানুফ্যাকচারিং প্রসেস, অটোমোবাইল ইঞ্জিন, রোবোটিক্স, এবং হিট ট্রান্সফার সম্পর্কে জ্ঞান অর্জন করবেন। আপনি ডিজাইন করা, উৎপাদন করা এবং বিভিন্ন যান্ত্রিক সিস্টেম মেরামত করার দক্ষতা লাভ করবেন।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>মেকানিক্যাল ইঞ্জিনিয়ার</li>
+                    <li>অটোমোবাইল ইঞ্জিনিয়ার</li>
+                    <li>প্রোডাকশন ইঞ্জিনিয়ার</li>
+                    <li>HVAC ইঞ্জিনিয়ার</li>
+                    <li>রোবোটিক্স ইঞ্জিনিয়ার</li>
+                    <li>এনার্জি ম্যানেজমেন্ট ইঞ্জিনিয়ার</li>
+                    <li>ডিজাইন ইঞ্জিনিয়ার</li>
+                    <li>মেন্টেন্যান্স ইঞ্জিনিয়ার</li>
+                </ul>
+                <p>শিল্প বিপ্লব থেকে শুরু করে আধুনিক প্রযুক্তি, মেকানিক্যাল ইঞ্জিনিয়ারিং সবসময়ই অগ্রণী ভূমিকা পালন করেছে। এই ক্ষেত্রের পেশাদারদের চাহিদা ম্যানুফ্যাকচারিং, অটোমোটিভ, এয়ারোস্পেস, এনার্জি এবং রোবোটিক্স সহ বিভিন্ন শিল্পে অত্যন্ত বেশি।</p>
+                <span class="close-article-btn" onclick="hideArticle('mechanical')">বন্ধ করুন</span>
+            </div>
+
+            <div id="electronics-article" class="detailed-article">
+                <h3>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং</h3>
+                <p>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং হলো আধুনিক প্রযুক্তির প্রাণকেন্দ্র, যা ইলেকট্রনিক সার্কিট, কম্পোনেন্ট এবং সিস্টেমের ডিজাইন, ডেভেলপমেন্ট এবং টেস্টিং নিয়ে কাজ করে। এই কোর্সে আপনি সেমিকন্ডাক্টর ফিজিক্স, ডিজিটাল ও অ্যানালগ ইলেকট্রনিক্স, মাইক্রোপ্রসেসর, এমবেডেড সিস্টেম, কমিউনিকেশন সিস্টেম (যেমন - মোবাইল, ওয়াইফাই) এবং কন্ট্রোল সিস্টেমের মতো বিষয়গুলো শিখবেন। আপনার ল্যাপটপ, মোবাইল ফোন থেকে শুরু করে অত্যাধুনিক ড্রোন ও স্যাটেলাইট - সবখানেই ইলেকট্রনিক্স ইঞ্জিনিয়ারিং এর অবদান রয়েছে।</p>
+                <p><strong>আপনি যা হতে পারেন:</strong></p>
+                <ul>
+                    <li>ইলেকট্রনিক্স ইঞ্জিনিয়ার</li>
+                    <li>এমবেডেড সিস্টেম ইঞ্জিনিয়ার</li>
+                    <li>সার্কিট ডিজাইনার</li>
+                    <li>RF (Radio Frequency) ইঞ্জিনিয়ার</li>
+                    <li>কন্ট্রোল সিস্টেম ইঞ্জিনিয়ার</li>
+                    <li>কম্পিউটার হার্ডওয়্যার ইঞ্জিনিয়ার</li>
+                    <li>টেলিকম ইঞ্জিনিয়ার</li>
+                    <li>IoT (Internet of Things) ডেভেলপার</li>
+                </ul>
+                <p>ইলেকট্রনিক্স প্রকৌশলীরা যোগাযোগ, কম্পিউটার, প্রতিরক্ষা, চিকিৎসা সরঞ্জাম এবং ভোগ্যপণ্য শিল্পে গুরুত্বপূর্ণ ভূমিকা রাখেন। এটি এমন একটি ক্ষেত্র যা প্রতিনিয়ত নতুন উদ্ভাবন নিয়ে আসছে এবং এর পেশাদারদের জন্য রয়েছে অফুরন্ত ক্যারিয়ারের সুযোগ।</p>
+                <span class="close-article-btn" onclick="hideArticle('electronics')">বন্ধ করুন</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-diploma">
+        <div class="container">
+            <h2>কেন ডিপ্লোমা ইঞ্জিনিয়ারিং এ ভর্তি হবেন❓</h2>
+            <div class="why-diploma-content">
+                <div class="why-diploma-item">
+                    <h3>ক্যারিয়ারের নিশ্চয়তা ও দ্রুত পদোন্নতি</h3>
+                    <p>একবিংশ শতাব্দীর চ্যালেঞ্জ মোকাবিলার জন্য কারিগরি শিক্ষার কোন বিকল্প নেই। আর কারিগরি শিক্ষার অন্যতম দিক হচ্ছে হাতে কলমে শিক্ষা গ্রহণ যাতে করে শিক্ষার্থীরা টেকসই ক্যারিয়ার নিশ্চিত করতে পারে। শুধুমাত্র ৪ বছরের ডিপ্লোমা কোর্সের পরেই সরকারি চাকরির পাশাপাশি বিভিন্ন বেসরকারি প্রতিষ্ঠানে চাকরির সুযোগ রয়েছে এছাড়াও উপ-সহকারি প্রকৌশলী পদে, সরকারি প্রতিষ্ঠান সহ দেশ বিদেশের বিভিন্ন প্রতিষ্ঠান গুলোতেও ডিপ্লোমা ইঞ্জিনিয়ারদের ব্যাপক চাহিদা রয়েছে। তাই একজন সচেতন নাগরিক হিসেবে খুব অল্প সময়ে ক্যারিয়ার গড়ার জন্য কারিগরি শিক্ষার কোন বিকল্প নেই।</p>
+                </div>
+                <div class="why-diploma-item">
+                    <h3>বিশেষজ্ঞদের সমতুল্য মর্যাদা ও চাহিদা</h3>
+                    <p>একজন ডিপ্লোমা ইঞ্জিনিয়ার ও জেনারেল পড়ুয়া ব্যক্তির মধ্যে পার্থক্য রাতারাতি তৈরি হয়। ডিপ্লোমা ইঞ্জিনিয়ারদের হাতে-কলমে দক্ষতা থাকে যা তাদের কর্মক্ষেত্রে অনেক এগিয়ে রাখে। যেখানে জেনারেল শিক্ষায় একটি নির্দিষ্ট পর্যায়ে পৌঁছাতে অনেক সময় ও শ্রম লাগে, সেখানে ডিপ্লোমা ইঞ্জিনিয়ারিং আপনাকে অল্প সময়েই কর্মজীবনের জন্য প্রস্তুত করে তোলে। সঠিক টেকনিক্যাল স্কিল না থাকলে বেকারত্বের ঝুঁকি বাড়ে, কিন্তু ডিপ্লোমা ইঞ্জিনিয়ারিং আপনাকে সেই ঝুঁকি থেকে মুক্ত রেখে একটি সুরক্ষিত ও সম্মানজনক ক্যারিয়ারের নিশ্চয়তা দেয়। অতএব, ৪ বছরে একটু কষ্ট করুন, আপনার ক্যারিয়ারের ভবিষ্যৎ উজ্জ্বল হবে ইনশাআল্লাহ।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tisi-bogura">
+        <div class="container">
+            <h2>কেন ডিপ্লোমা ইঞ্জিনিয়ারিং কোর্সের জন্য টিআইএসআই বগুড়া বেছে নিবেন❓</h2>
+            <div class="tisi-bogura-content">
+                <div class="tisi-bogura-item">
+                    <h3>সেরা শিক্ষা ও প্রশিক্ষণের নিশ্চয়তা</h3>
+                    <p>টিআইএসআই দেশের সেরা বেসরকারি পলিটেকনিক ইন্সটিটিউট সমূহের মধ্যে অন্যতম এবং প্রতি বছর একের অধিক শিক্ষার্থী বোর্ড ফাইনাল পরীক্ষার ফলাফলে মেধা তালিকায় থাকে। চাকরির ক্ষেত্রে সব চেয়ে বড় ভূমিকা পালন করে যেহেতু TMSS তো নিজেই অনেক বড় একটি প্রতিষ্ঠান, তাই TMSS নিজেই যদি তার নিজস্ব প্রতিষ্ঠানে চাকরি দেওয়ার সুযোগ তৈরি করে দেয়, তাহলে আপনার ক্যারিয়ার সুরক্ষিত রাখতে এর চেয়ে ভালো আর কি হতে পারে? আমরা শিক্ষার্থীদের শুধুমাত্র জ্ঞানই দিই না, তাদের দক্ষ করে তুলি যাতে তারা বাস্তব জীবনে সফল হতে পারে।</p>
+                </div>
+                <div class="tisi-bogura-item">
+                    <h3>সুবিধাসমূহ</h3>
+                    <ul class="star-list">
+                        <li>অত্যাধুনিক প্রযুক্তির উন্নতমানের ল্যাবরেটরি সুবিধা।</li>
+                        <li>আন্তর্জাতিক মানের লেকচার প্ল্যান অনুযায়ী শিক্ষা ব্যবস্থা।</li>
+                        <li>শিক্ষার্থীদের জন্য বিশেষ শিক্ষা বৃত্তি।</li>
+                        <li>অভিজ্ঞ ও দক্ষ শিক্ষকমন্ডলী দ্বারা পাঠদান।</li>
+                        <li>শতভাগ ক্লাসে উপস্থিতি নিশ্চিতকরণ।</li>
+                        <li>শিক্ষার্থীদের জন্য রয়েছে প্রতি পর্বে ৫,০০০ টাকা সরকারি বৃত্তি ব্যবস্থা।</li>
+                        <li>প্রতি সেমিস্টারে বিনামূল্যে বই প্রদান।</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="admission-info">
+        <div class="container">
+            <p>প্রযুক্তি নির্ভর শিক্ষা একটি দেশকে এগিয়ে নিয়ে যেতে অনন্য ভূমিকা পালন করে। কর্মমূখী শিক্ষা হোক ক্যারিয়ার গড়ার এবং বেকারত্ব দূরীকরণের প্রধান মাধ্যম।</p>
+            <h2>টিআইএসআই বগুড়া এ ৪ বছর মেয়াদী ডিপ্লোমা ইঞ্জিনিয়ারিং এ ২০২৪-২৫ সেশনে ভর্তি চলছে।</h2>
             <h3>আমাদের টেকনোলজিসমূহঃ</h3>
-            <ul>
-                <li><a href="#cse">কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#graphics">গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#ceramic">সিরামিক ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#glass">গ্লাস ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#civil">সিভিল ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#electrical">ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#mechanical">মেকানিক্যাল ইঞ্জিনিয়ারিং</a></li>
-                <li><a href="#electronics">ইলেকট্রনিক্স ইঞ্জিনিয়ারিং</a></li>
+            <ul class="icon-list">
+                <li>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং</li>
+                <li>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং</li>
+                <li>সিরামিক ইঞ্জিনিয়ারিং</li>
+                <li>গ্লাস ইঞ্জিনিয়ারিং</li>
+                <li>সিভিল ইঞ্জিনিয়ারিং</li>
+                <li>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং</li>
+                <li>মেকানিক্যাল ইঞ্জিনিয়ারিং</li>
+                <li>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং</li>
             </ul>
-
             <h3>ভর্তির যোগ্যতাঃ</h3>
-            <p>
-                দেশের যে কোন শিক্ষা বোর্ড এবং বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়ের অধীনে অনুষ্ঠিত এস.এস.সি/দাখিল/ভোকেশনাল/উন্মুক্ত সমমান পরীক্ষায় যে কোন সনে পাশকৃত কমপক্ষে জিপিএ ২.০০ প্রাপ্ত শিক্ষার্থীগন ডিপ্লোমা ইঞ্জিনিয়ারিং এ ভর্তির জন্য আবেদন করতে পারবেন।
-            </p>
-
-            <h3>সুবিধাসমূহঃ</h3>
-            <ul>
-                <li>♦ অত্যাধুনিক প্রযুক্তির উন্নতমানের ল্যাব।</li>
-                <li>♦ লেকচার প্ল্যান অনুযায়ী শিক্ষা ব্যবস্থা ।</li>
-                <li>♦ শিক্ষা বৃত্তি।</li>
-                <li>♦ অভিজ্ঞ শিক্ষকমন্ডলী দ্বারা পাঠদান।</li>
-                <li>♦ শতভাগ ক্লাস ।</li>
-                <li>♦ শিক্ষার্থীদের জন্য রয়েছে প্রতি পর্বে ৫,০০০ টাকা সরকারি বৃত্তি ব্যবস্থা ।</li>
-                <li>♦ প্রতি সেমিস্টারে বই ফ্রি ।</li>
-            </ul>
-
-            <!-- Technology Details (Hidden by default) -->
-            <div id="cse" class="tech-detail">
-                <h4>কম্পিউটার সায়েন্স এ্যান্ড ইঞ্জিনিয়ারিং</h4>
-                <p>কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং (CSE) হলো কম্পিউটার হার্ডওয়্যার এবং সফটওয়্যার উভয়ের উপর ভিত্তি করে তৈরি একটি শাখা। এই বিভাগে আপনি প্রোগ্রামিং, অ্যালগরিদম, ডেটা স্ট্রাকচার, অপারেটিং সিস্টেম, নেটওয়ার্কিং, ডেটাবেস ম্যানেজমেন্ট এবং সফটওয়্যার ডেভেলপমেন্টের মতো বিষয়গুলো শিখবেন। একজন CSE গ্র্যাজুয়েট হিসেবে আপনি সফটওয়্যার ইঞ্জিনিয়ার, ওয়েব ডেভেলপার, ডেটা সায়েন্টিস্ট, নেটওয়ার্ক অ্যাডমিনিস্ট্রেটর, সাইবার সিকিউরিটি বিশেষজ্ঞ এবং আরও অনেক পেশায় নিজেকে প্রতিষ্ঠিত করতে পারেন। বর্তমান ডিজিটাল যুগে CSE গ্র্যাজুয়েটদের চাহিদা বিশ্বব্যাপী অত্যন্ত বেশি।</p>
-            </div>
-            <div id="graphics" class="tech-detail">
-                <h4>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং</h4>
-                <p>গ্রাফিক্স ডিজাইন ইঞ্জিনিয়ারিং একটি সৃজনশীল এবং প্রযুক্তি-নির্ভর ক্ষেত্র। এখানে আপনি ভিজ্যুয়াল কমিউনিকেশন, লোগো ডিজাইন, ব্র্যান্ডিং, ওয়েব ডিজাইন, ইউজার ইন্টারফেস (UI) ডিজাইন, ইউজার এক্সপেরিয়েন্স (UX) ডিজাইন, অ্যানিমেশন এবং মাল্টিমিডিয়া তৈরির কাজ শিখবেন। গ্রাফিক্স ডিজাইনাররা বিভিন্ন শিল্পে যেমন বিজ্ঞাপন, প্রকাশনা, ওয়েব ডেভেলপমেন্ট, গেম ডিজাইন, মোশন গ্রাফিক্স এবং প্রিন্ট মিডিয়াতে কাজ করার সুযোগ পান। একজন দক্ষ গ্রাফিক্স ডিজাইনার ডিজিটাল মার্কেটিং এবং ব্র্যান্ডিংয়ের জগতে অত্যন্ত মূল্যবান সম্পদ।</p>
-            </div>
-            <div id="ceramic" class="tech-detail">
-                <h4>সিরামিক ইঞ্জিনিয়ারিং</h4>
-                <p>সিরামিক ইঞ্জিনিয়ারিং হলো মাটি, খনিজ এবং অন্যান্য অজৈব পদার্থ ব্যবহার করে উচ্চ-তাপমাত্রার উপকরণ তৈরি ও উন্নয়নের উপর দৃষ্টি নিবদ্ধ করা একটি প্রকৌশল শাখা। এই বিভাগে আপনি সিরামিক সামগ্রী উৎপাদন, টাইলস, স্যানিটারি ওয়্যার, গ্লাস, সিমেন্ট, ইট এবং অন্যান্য সিরামিক পণ্যের ডিজাইন, উৎপাদন প্রক্রিয়া এবং মান নিয়ন্ত্রণ সম্পর্কে শিখবেন। সিরামিক ইঞ্জিনিয়াররা নির্মাণ শিল্প, অটোমোবাইল, মহাকাশ, ইলেকট্রনিক্স এবং চিকিৎসা ক্ষেত্রে বিভিন্ন গুরুত্বপূর্ণ ভূমিকা পালন করেন।</p>
-            </div>
-            <div id="glass" class="tech-detail">
-                <h4>গ্লাস ইঞ্জিনিয়ারিং</h4>
-                <p>গ্লাস ইঞ্জিনিয়ারিং হলো কাঁচের উৎপাদন, নকশা এবং ব্যবহারের উপর বিশেষ ভাবে আলোকপাত করা একটি শাখা। এই কোর্সে আপনি কাঁচের উপাদান, উৎপাদন পদ্ধতি, কাঁচের বিভিন্ন প্রকারভেদ (যেমন - ফ্লোট গ্লাস, টেম্পারড গ্লাস, ল্যামিনেটেড গ্লাস) এবং তাদের প্রয়োগ সম্পর্কে বিস্তারিত জানতে পারবেন। গ্লাস ইঞ্জিনিয়ারদের নির্মাণ শিল্প, স্বয়ংচালিত শিল্প, ইলেকট্রনিক্স, অপটিক্যাল যন্ত্রাংশ এবং প্যাকেজিং শিল্পে ব্যাপক চাহিদা রয়েছে। আধুনিক জীবনে কাঁচের ব্যবহার অপরিহার্য, তাই এই ক্ষেত্রের পেশাদারদের ভবিষ্যৎ উজ্জ্বল।</p>
-            </div>
-            <div id="civil" class="tech-detail">
-                <h4>সিভিল ইঞ্জিনিয়ারিং</h4>
-                <p>সিভিল ইঞ্জিনিয়ারিং হলো নির্মাণ ও অবকাঠামো বিষয়ক প্রকৌশলের একটি প্রাচীন ও গুরুত্বপূর্ণ শাখা। এই বিভাগে আপনি ভবন, রাস্তা, সেতু, বাঁধ, বিমানবন্দর, জল সরবরাহ ব্যবস্থা এবং বর্জ্য ব্যবস্থাপনা সহ বিভিন্ন ধরণের অবকাঠামো নকশা, নির্মাণ, পরিচালনা এবং রক্ষণাবেক্ষণ সম্পর্কে শিখবেন। সিভিল ইঞ্জিনিয়াররা যেকোনো দেশের উন্নয়নে অপরিহার্য ভূমিকা পালন করেন। তারা একটি দেশের ভৌত অবকাঠামো গড়ে তুলতে এবং তা পরিচালনা করতে সাহায্য করেন।</p>
-            </div>
-            <div id="electrical" class="tech-detail">
-                <h4>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং</h4>
-                <p>ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং হলো বিদ্যুৎ, ইলেকট্রনিক্স এবং বিদ্যুৎ-চুম্বকত্ব নিয়ে অধ্যয়ন ও প্রয়োগের একটি প্রকৌশল শাখা। এই বিভাগে আপনি বিদ্যুৎ উৎপাদন, সঞ্চালন, বিতরণ ব্যবস্থা, বৈদ্যুতিক যন্ত্রপাতি, কন্ট্রোল সিস্টেম, পাওয়ার ইলেকট্রনিক্স এবং নবায়নযোগ্য শক্তি উৎস সম্পর্কে জ্ঞান লাভ করবেন। ইলেকট্রিক্যাল ইঞ্জিনিয়ারদের বিদ্যুৎ কেন্দ্র, শিল্প কারখানা, টেলিকমিউনিকেশন, অটোমোবাইল এবং ইলেকট্রনিক্স শিল্পে ব্যাপক চাহিদা রয়েছে। আমাদের দৈনন্দিন জীবনে বিদ্যুতের ব্যবহার ছাড়া অচল, তাই এই শাখার গুরুত্ব অপরিসীম।</p>
-            </div>
-            <div id="mechanical" class="tech-detail">
-                <h4>মেকানিক্যাল ইঞ্জিনিয়ারিং</h4>
-                <p>মেকানিক্যাল ইঞ্জিনিয়ারিং হলো প্রকৌশলের একটি বিস্তৃত শাখা যা যান্ত্রিক সিস্টেমের নকশা, বিশ্লেষণ, উৎপাদন এবং রক্ষণাবেক্ষণ নিয়ে কাজ করে। এই বিভাগে আপনি তাপগতিবিদ্যা, ফ্লুইড মেকানিক্স, মেশিন ডিজাইন, উৎপাদন প্রযুক্তি এবং রোবোটিক্সের মতো বিষয়গুলো শিখবেন। মেকানিক্যাল ইঞ্জিনিয়ারদের অটোমোবাইল, মহাকাশ, ম্যানুফ্যাকচারিং, পাওয়ার প্ল্যান্ট, রোবোটিক্স এবং বায়োমেডিকেল ইঞ্জিনিয়ারিং-এর মতো বিভিন্ন শিল্পে কাজের সুযোগ রয়েছে। তারা আধুনিক প্রযুক্তির উদ্ভাবন ও উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখেন।</p>
-            </div>
-            <div id="electronics" class="tech-detail">
-                <h4>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং</h4>
-                <p>ইলেকট্রনিক্স ইঞ্জিনিয়ারিং হলো ইলেকট্রনিক সার্কিট, ডিভাইস, সিস্টেম এবং তাদের প্রয়োগ নিয়ে অধ্যয়ন ও নকশার একটি প্রকৌশল শাখা। এই বিভাগে আপনি সেমিকন্ডাক্টর ডিভাইস, ইন্টিগ্রেটেড সার্কিট (IC), মাইক্রোপ্রসেসর, কমিউনিকেশন সিস্টেম, কন্ট্রোল সিস্টেম এবং এমবেডেড সিস্টেম সম্পর্কে জ্ঞান লাভ করবেন। ইলেকট্রনিক্স ইঞ্জিনিয়ারদের টেলিকমিউনিকেশন, কম্পিউটার, কনজিউমার ইলেকট্রনিক্স, অটোমেশন, রোবোটিক্স এবং মহাকাশ প্রযুক্তির মতো ক্ষেত্রগুলোতে ব্যাপক চাহিদা রয়েছে। আজকের ডিজিটাল বিশ্ব ইলেকট্রনিক্স ছাড়া অচল।</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="share-button">
-            <button id="shareButton">Invited your Friends</button>
+            <p>দেশের যে কোন শিক্ষা বোর্ড এবং বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়ের অধীনে অনুষ্ঠিত এস.এস.সি/দাখিল/ভোকেশনাল/উন্মুক্ত সমমান পরীক্ষায় যে কোন সনে পাশকৃত কমপক্ষে জিপিএ ২.০০ প্রাপ্ত শিক্ষার্থীগন ডিপ্লোমা ইঞ্জিনিয়ারিং এ ভর্তির জন্য আবেদন করতে পারবেন।</p>
         </div>
+    </section>
 
-        <div class="floating-button">
-            <button id="admissionBtn">Get Admission</button>
-        </div>
-    </footer>
+    <div class="floating-button">
+        <button id="admissionBtn">Get Admission</button>
+    </div>
 
-    <div id="admissionPopup" class="popup">
+    <div id="admissionPopup" class="popup-overlay">
         <div class="popup-content">
-            <span class="close-button">×</span>
+            <span class="close-button" id="closePopupBtn">&times;</span>
             <h3>যোগাযোগ করুন</h3>
             <div class="contact-buttons">
-                <!-- Ensure facebook-icon.png is in the same directory -->
-                <a href="https://www.facebook.com/share/1CrAcD1AhL" target="_blank" class="contact-btn facebook">
-                    <img src="facebook-icon.png" alt="Facebook"> <span>Facebook</span>
-                </a>
-                <!-- Ensure whatsapp-icon.png is in the same directory -->
-                <a href="https://wa.me/8801850018110?text=আসসালামু আলাইকুম, আমি ভর্তি সম্পর্কে হতে ইচ্ছুক কি ভাবে ভর্তি হতে পারি আরো বিস্তারিত বলুন" target="_blank" class="contact-btn whatsapp">
-                    <img src="whatsapp-icon.png" alt="WhatsApp"> <span>WhatsApp</span>
-                </a>
-                <!-- Ensure Call Now.png is in the same directory -->
-                <a href="tel:01850018110" class="contact-btn call">
-                    <img src="Call Now.png" alt="Call Now"> <span>Call Now</span>
-                </a>
+                <button onclick="window.open('https://www.facebook.com/share/1CrAcD1AhL', '_blank')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook">
+                    ফেসবুক প্রোফাইল
+                </button>
+                <button onclick="window.location.href='https://wa.me/8801850018110?text=আসসালামু আলাইকুম%2C%20আমি%20ভর্তি%20সম্পর্কে%20হতে%20ইচ্ছুক%20কি%20ভাবে%20ভর্তি%20হতে%20পারি%20আরো%20বিস্তারিত%20বলুন'">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp">
+                    WhatsApp এ মেসেজ পাঠান
+                </button>
+                <button onclick="window.location.href='tel:01850018110'">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Call_icon.svg/1024px-Call_icon.svg.png" alt="Call">
+                    কল করুন
+                </button>
             </div>
         </div>
     </div>
 
+    <div class="share-section">
+        <div class="container">
+            <h3>আপনার বন্ধুদের জানান</h3>
+            <button class="share-button" onclick="shareOnWhatsApp()">
+                <img src="https://cdn-icons-png.flaticon.com/512/21/21537.png" alt="WhatsApp Icon">
+                Invite your Friends
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ২০২৪-২৫ সেশন | টিএমএসএস ইন্সটিটিউট অব সাইন্স এ্যান্ড আইসিটি, বগুড়া। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const admissionBtn = document.getElementById('admissionBtn');
-            const admissionPopup = document.getElementById('admissionPopup');
-            const closeButton = admissionPopup.querySelector('.close-button');
-            const shareButton = document.getElementById('shareButton');
+        const admissionBtn = document.getElementById('admissionBtn');
+        const admissionPopup = document.getElementById('admissionPopup');
+        const closePopupBtn = document.getElementById('closePopupBtn');
 
-            // Function to open the popup
-            admissionBtn.addEventListener('click', function() {
-                admissionPopup.style.display = 'block';
+        // Function to show a specific article
+        function showArticle(id) {
+            // Hide all articles first
+            document.querySelectorAll('.detailed-article').forEach(article => {
+                article.style.display = 'none';
             });
+            // Show the selected article
+            document.getElementById(`${id}-article`).style.display = 'block';
+        }
 
-            // Function to close the popup
-            closeButton.addEventListener('click', function() {
-                admissionPopup.style.display = 'none';
-            });
+        // Function to hide a specific article
+        function hideArticle(id) {
+            document.getElementById(`${id}-article`).style.display = 'none';
+        }
 
-            // Close popup if user clicks outside of it
-            window.addEventListener('click', function(event) {
-                if (event.target === admissionPopup) {
-                    admissionPopup.style.display = 'none';
-                }
-            });
-
-            // Share button functionality
-            shareButton.addEventListener('click', function() {
-                const shareText = "SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে? টিএমএসএস ইন্সটিটিউট অব সাইন্স এ্যান্ড আইসিটি-তে ডিপ্লোমা ইঞ্জিনিয়ারিং কোর্সে ভর্তি চলছে। বিস্তারিত জানতে ভিজিট করুন:";
-                const shareUrl = window.location.href; // Current page URL
-                // Construct the WhatsApp share URL
-                const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`;
-
-                // Open WhatsApp in a new tab/window
-                window.open(whatsappShareUrl, '_blank');
-            });
-
-            // Smooth scrolling for technology links
-            document.querySelectorAll('.article-content a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-
-                    if (targetElement) {
-                        // Scroll to the target element
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-
-                        // Make the tech detail visible and scroll into view
-                        targetElement.style.display = 'block';
-                    }
-                });
-            });
+        // Event listener for the Admission Button
+        admissionBtn.addEventListener('click', () => {
+            admissionPopup.style.display = 'flex';
         });
+
+        // Event listener for the Close Popup Button
+        closePopupBtn.addEventListener('click', () => {
+            admissionPopup.style.display = 'none';
+        });
+
+        // Close popup if clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === admissionPopup) {
+                admissionPopup.style.display = 'none';
+            }
+        });
+
+        // Function to share on WhatsApp
+        function shareOnWhatsApp() {
+            const message = `SSC পাস করছেন? এবার নিজের ক্যারিয়ার Boost করবেন যে ভাবে! 🚀
+আপনার উজ্জ্বল ভবিষ্যৎ গড়তে ডিপ্লোমা ইঞ্জিনিয়ারিং-এর বিশ্বস্ত পথ।
+বিস্তারিত জানতে ভিজিট করুন: [আপনার ওয়েবসাইটের লিঙ্ক দিন]
+#DiplomaEngineering #CareerBoost #TISIbogura #EducationBD`; // আপনার ওয়েবসাইটের লিঙ্ক যোগ করুন
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+        }
     </script>
+
 </body>
 </html>
